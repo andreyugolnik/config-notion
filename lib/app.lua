@@ -1,3 +1,6 @@
+-- Authors: Jeremy Hankins <nowan@nowan.org>, Johannes Segitz, Antti Kaihola <antti.kaihola@linux-aktivaattori.org>
+-- License: Unknown
+-- Last Changed: 2005-11-16
 --
 -- By Jeremy Hankins <nowan@nowan.org>
 -- Multi-head support added by Johannes Segitz
@@ -49,16 +52,16 @@ function app.match_class(class, instance)
       if class == win:get_ident().class then
         if instance then
             if instance == win:get_ident().instance then
-                table.insert(result, table.getn(result)-offset+1, win)
+                table.insert(result, #(result)-offset+1, win)
             end
         else
-            table.insert(result, table.getn(result)-offset+1, win)
+            table.insert(result, #(result)-offset+1, win)
         end
       end
       if win == currwin then
 	 -- Current client window found, continue filling the table from
 	 -- the beginning.
-	 offset = table.getn(result)
+	 offset = #(result)
       end
       return true
    end)
