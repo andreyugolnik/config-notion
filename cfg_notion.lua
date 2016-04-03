@@ -26,10 +26,11 @@ META="Mod4+"
 ALTMETA="Mod1+"
 
 -- Terminal emulator
-XTERM="urxvt"
+XTERM="urxvtc"
+--XTERM="uxterm"
 
 -- Some basic settings
-ioncore.set{
+notioncore.set{
     -- Maximum delay between clicks in milliseconds to be considered a
     -- double click.
     --dblclick_delay=250,
@@ -46,13 +47,14 @@ ioncore.set{
     -- Movement commands warp the pointer to frames instead of just
     -- changing focus. Enabled by default.
     --warp=true,
+    warp=false,
 
     -- disable follow mouse focus
     --mousefocus='sloppy',
     mousefocus='disabled',
 
     -- Switch frames to display newly mapped windows
-    --switchto=true,
+    switchto=true,
 
     -- Default index for windows in frames: one of 'last', 'next' (for
     -- after current), or 'next-act' (for after current and anything with
@@ -60,10 +62,10 @@ ioncore.set{
     --frame_default_index='next',
 
     -- Auto-unsqueeze transients/menus/queries.
-    --unsqueeze=true,
+    unsqueeze=true,
 
     -- Display notification tooltips for activity on hidden workspace.
-    --screen_notify=true,
+    screen_notify=true,
 }
 
 

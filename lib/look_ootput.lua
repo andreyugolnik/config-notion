@@ -16,7 +16,8 @@ de.defstyle("*", {
     border_style = "elevated",
     text_align = "center",
     --font = "-*-dejavu sans-medium-r-normal-*-18-*-*-*-*-*-iso10646-*"
-	font = "-*-trebuchet ms-medium-r-normal-*-18-*-*-*-*-*-*-*",
+    font = "-*-trebuchet ms-medium-r-normal-*-18-*-*-*-*-*-*-*",
+    --font = "xft:Droid Sans Mono-12:bold",
 })
 
 de.defstyle("frame", {

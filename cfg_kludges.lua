@@ -273,6 +273,13 @@ defwinprop {
 defwinprop {
     class     = "Gimp",
     instance  = "gimp",
+    role      = "gimp-image-window-1",
+    target    = "gimp",
+    acrobatic = true
+}
+defwinprop {
+    class     = "Gimp",
+    instance  = "gimp",
     role      = "",
     target    = "gimp",
     float     = true
